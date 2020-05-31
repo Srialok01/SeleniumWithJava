@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="13363" started-at="2020-05-31T15:18:41 IST" finished-at="2020-05-31T15:18:54 IST">
+    <groups>
+    </groups>
+    <test name="Testcases" duration-ms="13363" started-at="2020-05-31T15:18:41 IST" finished-at="2020-05-31T15:18:54 IST">
+      <class name="com.seleniumjavaFramework.testcases.Test_LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.seleniumjavaFramework.testcases.Test_LoginTest@21b2e768]" name="setUp" is-config="true" duration-ms="3746" started-at="2020-05-31T15:18:41 IST" finished-at="2020-05-31T15:18:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.seleniumjavaFramework.testcases.Test_LoginTest@21b2e768]" name="loginTest" duration-ms="8812" started-at="2020-05-31T15:18:45 IST" finished-at="2020-05-31T15:18:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.seleniumjavaFramework.testcases.Test_LoginTest@21b2e768]" name="tearDown" is-config="true" duration-ms="651" started-at="2020-05-31T15:18:54 IST" finished-at="2020-05-31T15:18:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.seleniumjavaFramework.testcases.Test_LoginTest -->
+    </test> <!-- Testcases -->
+  </suite> <!-- Suite -->
+</testng-results>

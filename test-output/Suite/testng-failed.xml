@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.seleniumjavaFramework.utilites.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Testcases(failed)">
+    <parameter name="browser" value="CHROME"/>
+    <classes>
+      <class name="com.seleniumjavaFramework.testcases.Test_LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.seleniumjavaFramework.testcases.Test_LoginTest -->
+    </classes>
+  </test> <!-- Testcases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
