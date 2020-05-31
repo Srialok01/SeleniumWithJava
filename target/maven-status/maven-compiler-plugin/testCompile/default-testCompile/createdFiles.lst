@@ -1,0 +1,5 @@
+com\seleniumjavaFramework\utilites\ReadConfig.class
+com\seleniumjavaFramework\testcases\BaseClass.class
+com\seleniumjavaFramework\testcases\Test_LoginTest.class
+com\seleniumjavaFramework\pageObjects\LoginPage.class
+com\seleniumjavaFramework\utilites\Reporting.class
