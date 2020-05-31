@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest">
-              <span class="suite-name border-skipped">com.seleniumjavaFramework.testcases.Test_LoginTest</span>
+              <span class="suite-name border-failed">com.seleniumjavaFramework.testcases.Test_LoginTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest" class="hide-methods skipped suite-com_seleniumjavaFramework_testcases_Test_LoginTest"> (hide)</a> <!-- hide-methods skipped suite-com_seleniumjavaFramework_testcases_Test_LoginTest -->
-                      <a href="#" panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest" class="show-methods skipped suite-com_seleniumjavaFramework_testcases_Test_LoginTest"> (show)</a> <!-- show-methods skipped suite-com_seleniumjavaFramework_testcases_Test_LoginTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest" class="hide-methods failed suite-com_seleniumjavaFramework_testcases_Test_LoginTest"> (hide)</a> <!-- hide-methods failed suite-com_seleniumjavaFramework_testcases_Test_LoginTest -->
+                      <a href="#" panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest" class="show-methods failed suite-com_seleniumjavaFramework_testcases_Test_LoginTest"> (show)</a> <!-- show-methods failed suite-com_seleniumjavaFramework_testcases_Test_LoginTest -->
                     </span>
-                    <div class="method-list-content skipped suite-com_seleniumjavaFramework_testcases_Test_LoginTest">
+                    <div class="method-list-content failed suite-com_seleniumjavaFramework_testcases_Test_LoginTest">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest" title="com.seleniumjavaFramework.testcases.Test_LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-com_seleniumjavaFramework_testcases_Test_LoginTest -->
+                    </div> <!-- method-list-content failed suite-com_seleniumjavaFramework_testcases_Test_LoginTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com_seleniumjavaFramework_testcases_Test_LoginTest" class="panel com_seleniumjavaFramework_testcases_Test_LoginTest">
-          <div class="suite-com_seleniumjavaFramework_testcases_Test_LoginTest-class-skipped">
+          <div class="suite-com_seleniumjavaFramework_testcases_Test_LoginTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.seleniumjavaFramework.testcases.Test_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,16 +128,29 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method setUp but has not been marked @Optional or defined
-
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=83.0.4103.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-FA6T06G8&apos;, ip: &apos;192.168.43.215&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Alok\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54938}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a1163042892e6ef52ad0582be32bf32a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.seleniumjavaFramework.testcases.Test_LoginTest.loginTest(Test_LoginTest.java:14)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
+... Removed 40 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com_seleniumjavaFramework_testcases_Test_LoginTest-class-skipped -->
+          </div> <!-- suite-com_seleniumjavaFramework_testcases_Test_LoginTest-class-failed -->
         </div> <!-- panel com_seleniumjavaFramework_testcases_Test_LoginTest -->
         <div panel-name="test-xml-com_seleniumjavaFramework_testcases_Test_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -193,12 +206,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.seleniumjavaFramework.testcases.Test_LoginTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 165);
 window.suiteTableData['com_seleniumjavaFramework_testcases_Test_LoginTest']= { tableData: data, tableDiv: 'times-div-com_seleniumjavaFramework_testcases_Test_LoginTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 165 ms</span>
               <div id="times-div-com_seleniumjavaFramework_testcases_Test_LoginTest">
               </div> <!-- times-div-com_seleniumjavaFramework_testcases_Test_LoginTest -->
             </div> <!-- times-div -->
@@ -225,14 +238,20 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.seleniumjavaFramework.testcases.Test_LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">3645 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">3819 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

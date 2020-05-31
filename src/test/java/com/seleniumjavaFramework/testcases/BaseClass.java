@@ -5,10 +5,9 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
 import com.seleniumjavaFramework.utilites.ReadConfig;
 
 
@@ -25,31 +24,18 @@ public class BaseClass	 {
 	public static WebDriver driver ;
 	
 	
-	@Parameters("browser")
-	@BeforeClass
-	public void setUp(String br) {
-		
-		if (br.equalsIgnoreCase("chrome"))
-		{
-			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true"); // To suppress renderer warning
-			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
-			driver = new ChromeDriver();
-		}
-		
-		else if (br.equalsIgnoreCase("firefox"))
-		{
-			System.setProperty("webdriver.firefox.driver",readconfig.getChromepath());
-			driver = new FirefoxDriver();
-		}
-		
-	 
-		
-		
-	}
 	
+	@BeforeMethod
+	public void setUp() {
+	System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true"); // To suppress renderer warning
+	System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
+	driver = new ChromeDriver();
+	
+	}
 
-	@AfterClass
+
+
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}

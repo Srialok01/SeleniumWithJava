@@ -6,7 +6,6 @@
 			class-name="com.seleniumjavaFramework.utilites.Reporting" />
 	</listeners>
 	<test thread-count="5" name="Testcases">
-		<parameter name="browser" value="CHROME" />
 		<classes>
 			<class
 				name="com.seleniumjavaFramework.testcases.Test_LoginTest" />
